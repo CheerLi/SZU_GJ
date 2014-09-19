@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+	android:layout_marginRight="@dimen/activity_horizontal_margin">
+	
+    <ProgressBar 
+        android:id="@+id/progressBar"
+        android:layout_width = "match_parent" 
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"/>
+
+  	<EditText
+  	    android:id="@+id/username"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:ems="10"
+  	    android:inputType="textPersonName"
+  	    android:hint="校卡账号">
+  	    <requestFocus />
+  	</EditText>
+
+  	<EditText
+  	    android:id="@+id/password"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:layout_marginTop="@dimen/activity_horizontal_margin"
+  	    android:ems="10"
+  	    android:inputType="textPassword" 
+  	    android:hint="校卡密码">
+  	</EditText>
+
+  	<EditText
+  	    android:id="@+id/verifyInput"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:layout_marginTop="@dimen/activity_horizontal_margin"
+  	    android:ems="10" 
+  	    android:hint="验证码"/>
+   
+    <ImageView android:id="@+id/verifyImage" 
+        android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"/>
+     <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="登录" 
+        android:background="#1E90FF" />
+ 
+</TableLayout>
